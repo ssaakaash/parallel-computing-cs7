@@ -1,0 +1,12 @@
+S03 environment record
+Date: 2026-10-19T16:22:21
+GPU: Tesla T4 | memory 15360 MiB | driver 580.178.04 | target sm_75 | GPUs visible: 2
+CPU: Intel(R) Xeon(R) CPU @ 2.00GHz | logical CPUs 4
+RAM: 31.3 GB total, 30.1 GB available at start
+OS: Linux-6.18.48+-x86_64-with-glibc2.39
+Python: 3.13.15
+CUDA compiler: nvcc: NVIDIA (R) Cuda compiler driver | Copyright (c) 2005-2025 NVIDIA Corporation | Built on Fri_Feb_21_20:23:50_PST_2025 | Cuda compilation tools, release 12.8, V12.8.93 | Build cuda_12.8.r12.8/compiler.35583870_0
+Host compiler: g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Compile command: nvcc -O3 -std=c++14 -arch=sm_75 -Xcompiler -fopenmp,-O3,-march=native /kaggle/working/s03_bench.cu -o /kaggle/working/s03_bench
+Runtime: OMP_DYNAMIC=FALSE, CUDA_VISIBLE_DEVICES=0, OMP thread counts [1, 2, 4]
+Sweep: tiles=[256, 1024, 4096] tile=256 passes=[1, 16] streams=[1] pinned=[1] chunk=64 reps=7 fine=False quick=False
